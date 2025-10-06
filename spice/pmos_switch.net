@@ -1,0 +1,17 @@
+* Z:\home\alowell\pcm3168a_euro1\spice\pmos_switch.asc
+V1 N001 0 12
+R1 N001 N003 10k
+R3 N002 0 100
+S1 N004 0 N005 0 MYSW
+V2 N005 0 PWL(0 -1 1 -1 1.000001 1 2 1)
+C1 N003 0 1000n
+M1 N002 N003 N001 N001 FDS6975
+R2 N003 N004 1k
+R4 N003 0 1Meg
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\alowell\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 3
+.model MYSW SW()
+.backanno
+.end
