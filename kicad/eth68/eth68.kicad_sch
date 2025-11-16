@@ -7140,7 +7140,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "TODO-\n* wire up gpio to reset lines of codec and phy\n* look at next-rev notes for proto boards\n* pull downs on analog outputs, far side of caps\n* thermal pad vias for PCM3168\n* add GPIO\n* wire up USB lines\n* redo top/bottom gnd vias\n* jumpers for selecting modes, address, etc\n* check pin config in stm32cube"
+	(text "TODO-\n* look at next-rev notes for proto boards\n* pull downs on analog outputs, far side of caps\n* thermal pad vias for PCM3168\n* add GPIO\n* wire up USB lines\n* redo top/bottom gnd vias\n* jumpers for selecting modes, address, etc\n* check pin config in stm32cube"
 		(exclude_from_sim no)
 		(at 853.694 477.266 0)
 		(effects

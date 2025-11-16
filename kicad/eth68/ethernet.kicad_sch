@@ -2945,6 +2945,12 @@
 		(uuid "2379d042-3416-4d01-9f24-0ddfad1fdafb")
 	)
 	(junction
+		(at 144.78 100.965)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "247809c2-b186-42ef-9058-c1b253b4218a")
+	)
+	(junction
 		(at 198.12 170.18)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3640,6 +3646,16 @@
 	)
 	(wire
 		(pts
+			(xy 144.78 100.965) (xy 144.78 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44d98a33-36f8-476a-84b3-0232a305ac27")
+	)
+	(wire
+		(pts
 			(xy 182.88 81.28) (xy 182.88 106.68)
 		)
 		(stroke
@@ -3827,6 +3843,16 @@
 			(type default)
 		)
 		(uuid "5e30da5f-5a84-40da-9120-1c54076bb6d0")
+	)
+	(wire
+		(pts
+			(xy 159.385 100.965) (xy 144.78 100.965)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "609b232e-04c1-4361-981c-4cd951064fd7")
 	)
 	(wire
 		(pts
@@ -4170,7 +4196,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 114.3) (xy 144.78 99.06)
+			(xy 144.78 114.3) (xy 144.78 100.965)
 		)
 		(stroke
 			(width 0)
@@ -4487,6 +4513,26 @@
 			(type default)
 		)
 		(uuid "c2522de0-7ac3-4a2f-a775-4ec99dd1a7f0")
+	)
+	(wire
+		(pts
+			(xy 159.385 103.505) (xy 159.385 100.965)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c571d08e-3754-413c-bebd-e06c15787186")
+	)
+	(wire
+		(pts
+			(xy 159.385 108.585) (xy 159.385 111.125)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6b2bfb2-29ba-4811-9d4a-e0513dd9fbaf")
 	)
 	(wire
 		(pts
@@ -6894,6 +6940,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 159.385 111.125 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1e844642-d004-4490-89f5-fe53fb18f5ed")
+		(property "Reference" "#PWR0110"
+			(at 159.385 117.475 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 159.385 115.2581 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 159.385 111.125 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 159.385 111.125 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 159.385 111.125 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "767595f8-78fb-4c74-a5d1-40b74a5e7883")
+		)
+		(instances
+			(project "eth68"
+				(path "/afe1fbe1-30b6-4eb7-94cf-5d2700d51271/9640a80f-487f-4c10-812b-52b7a90713bf"
+					(reference "#PWR0110")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 177.8 109.22 0)
 		(unit 1)
@@ -8749,6 +8862,94 @@
 			(project "eth68"
 				(path "/afe1fbe1-30b6-4eb7-94cf-5d2700d51271/9640a80f-487f-4c10-812b-52b7a90713bf"
 					(reference "R59")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 159.385 106.045 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6e3c2383-502e-4ae6-8153-56f74c84e72d")
+		(property "Reference" "R67"
+			(at 160.8836 104.8328 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10k"
+			(at 160.8836 107.0527 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 159.385 106.045 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 159.385 106.045 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 159.385 106.045 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pin" ""
+			(at 159.385 106.045 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C15401"
+			(at 159.385 106.045 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "10fff7ae-1718-4360-b709-e75708793634")
+		)
+		(pin "2"
+			(uuid "338a548d-b0fe-4fa7-810e-346c5b830a41")
+		)
+		(instances
+			(project "eth68"
+				(path "/afe1fbe1-30b6-4eb7-94cf-5d2700d51271/9640a80f-487f-4c10-812b-52b7a90713bf"
+					(reference "R67")
 					(unit 1)
 				)
 			)
