@@ -733,6 +733,10 @@
       "ethernet"
     ],
     [
+      "f601da99-c398-4722-bfbd-c1f57d8ee36c",
+      "rs232"
+    ],
+    [
       "44ae3cb1-b650-4b98-b8fc-19020a672d14",
       "midi_in1"
     ],
